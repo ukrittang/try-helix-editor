@@ -14,13 +14,6 @@ comment-token = "#"
 indent = { tab-width = 4, unit = "    " }
 language-server = { command = "nc", args = ["localhost", "6008"] }
 formatter = { command = "gdformat", args = ["-"] }
-# scope = "source.csharp"
-# injection-regex = "c-?sharp"
-# file-types = ["cs"]
-# roots = ["sln", "csproj"]
-# comment-token = "//"
-# indent = { tab-width = 4, unit = "\t" }
-# language-server = { command = "OmniSharp", args = [ "--languageserver" ] }
 
 [[language]]
 name = "python"
