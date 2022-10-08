@@ -1,0 +1,32 @@
+[[language]]
+name = "json"
+config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
+auto-format = true
+
+[[language]]
+name = "gdscript"
+scope = "source.gdscript"
+injection-regex = "gdscript"
+file-types = ["gd", "gdscript", "gdscript3", "gdscript4"]
+roots = ["project.godot"]
+auto-format = true
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+language-server = { command = "nc", args = ["localhost", "6008"] }
+formatter = { command = "gdformat", args = ["-"] }
+# scope = "source.csharp"
+# injection-regex = "c-?sharp"
+# file-types = ["cs"]
+# roots = ["sln", "csproj"]
+# comment-token = "//"
+# indent = { tab-width = 4, unit = "\t" }
+# language-server = { command = "OmniSharp", args = [ "--languageserver" ] }
+
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["--quiet", "-"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+auto-format = true
